@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="contactus.css" />
+    <div class="navigation-bar">
+      <nav>
+        <div class="logo">
+          <a href="#">
+            <img src="Images/atc-logo.png" alt="Logo Image">
+          </a>
+        </div>
+        <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="aboutus.html">About Us</a>
+          </li>
+          <li>
+            <a href="contactus.html">Contact Us</a>
+          </li>
+          <li>
+            <button class="login-button" onclick="window.location.href='login.html'">Login</button>
+          </li>
+          <li>
+            <button class="join-button" onclick="window.location.href='join.html'">Join</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </head>
+
+  <body>
+    <div class="banner-row">
+      <div class="banner-column">
+        <img class="future-image" src="Images/ATC-slider-Real-People-Real-Future-02.png">
+      </div>
+      <div class="banner-column">
+        <h1>Contact Us</h1>
+        <h2>Sydney</h2>
+        <p>30-32 Pomeroy Street <br> Homebush NSW 2140 <br> PO Box 3165 <br> North Strathfield NSW 2137 <br>
+          <br>
+          <b>Group Training Company</b>
+          <br> Ph: <a href="1300 737 822">1300 737 822</a>
+          <br>
+          <br>
+          <b>Training Centre</b>
+          <br> Ph: <a href="02 9704 1500">02 9704 1500</a>
+          <br> E: training@austrg.com.au
+        </p>
+    </div>
+    </div>
+    <div class="banner-row-2">
+      <div class="banner-column-2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.1467086286048!2d151.07910827630894!3d-33.86010977323002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bb3270d47105%3A0x5c406fad542a3506!2sAustralian%20Training%20Company!5e0!3m2!1sen!2sau!4v1696394949297!5m2!1sen!2sau" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="banner-column-2">
+        <div class="container">
+        <h1>Contact Us</h1><br>
+      <form action="#" onsubmit="return popup(this)" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="tel">Mobile Number</label>
+                <input type="tel" id="tel" name="tel" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+      </div>
+    </div>
+  </body>
+
+      <footer>
+      
+      <img src="Images/atc-logo.png">
+      <p>© 2020 Australian Training Company</p>
+
+      <p class="credit">Website by Jesse Peemoller</p>
+    </footer>
+
+  <script>
+function popup(theForm) {
+  let message = "";
+  message += "Hello, ";
+  message =+ document.getElementByID('name').value;
+  alert(message);
+}
+
+  </script>
+</html

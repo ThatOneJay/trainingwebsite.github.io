@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css" />
+    <title>Australian Training Company</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="Images/atc-logo.png" alt="Logo Image">
+          </a>
+        </div>
+        <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="aboutus.html">About Us</a>
+          </li>
+          <li>
+            <a href="contactus.html">Contact Us</a>
+          </li>
+          <li>
+            <button class="login-button" onclick="window.location.href='login.html'">Login</button>
+          </li>
+          <li>
+            <button class="join-button" onclick="window.location.href='join.html'">Join</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="banner-row">
+      <div class="banner-column">
+        <img class="future-image" src="Images/ATC-slider-Real-People-Real-Future.png">
+      </div>
+      <div class="banner-column-news">
+        <div class="news-text">
+          <div class="news-column">
+            <h2>2023 Peak Fitness Course</h2>
+            <p>Kick-start your career in 2023! ATC’s Peak Fitness Course is programmed to ensure you qualify as a group fitness/personal trainer coupled with the skills & knowledge to start and run your own business.</p>
+        </div>
+        <div class="news-column">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80">
+          <div>
+            <button>Find out more</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="panels">
+      <div class="panel">
+        <img src="https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80">
+        <div class="panel-content">
+        <p>ICT Traineeships</p>
+      </div>
+      </div>
+      <div class="panel">
+        <img src="https://images.unsplash.com/photo-1537511446984-935f663eb1f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80">
+      <div class="panel-content">
+        <p>Sport and Recreation</p>
+      </div>
+      </div>
+      <div class="panel">
+        <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80">
+      <div class="panel-content">
+        <p>Business</p>
+      </div>
+      </div>
+    </div>
+
+    <footer>
+      
+      <img src="Images/atc-logo.png">
+      <p>© 2020 Australian Training Company</p>
+
+      <p class="credit">Website by Jesse Peemoller</p>
+    </footer>
+  </body>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li");
+    hamburger.addEventListener('click', () => {
+      //Animate Links
+      navLinks.classList.toggle("open");
+      links.forEach(link => {
+        link.classList.toggle("fade");
+      });
+      //Hamburger Animation
+      hamburger.classList.toggle("toggle");
+    });
+  </script>
+</html>
